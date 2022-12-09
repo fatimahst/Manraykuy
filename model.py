@@ -30,10 +30,10 @@ def prediksi(hopen, hclose):
     for i in range(len(pred)):
         if pred[i] > pred[maks]:
             maks = i
-            if maks == 1:
-                maks = 'Naik'
-            elif maks == 0:
-                maks = 'Tetap'
-            elif maks == -1:
-                maks = 'Turun'
-            return maks
+    if maks == 1:
+        maks = 'Naik'
+    elif maks == 0:
+        maks = 'Tetap'
+    elif maks == -1:
+        maks = 'Turun'
+    return maks
